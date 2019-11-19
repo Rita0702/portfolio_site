@@ -47,8 +47,15 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: portfolio_site_production
-  username: portfolio_site
-  password: <%= ENV['PORTFOLIO_SITE_DATABASE_PASSWORD'] %>
+
+# 本番環境ではPostgreSQLを使用するため編集
+# production:
+#   <<: *default
+#   database: portfolio_site_production
+#   username: portfolio_site
+#   password: <%= ENV['PORTFOLIO_SITE_DATABASE_PASSWORD'] %>
+  production:
+    <<: *default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
