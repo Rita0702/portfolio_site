@@ -1,24 +1,18 @@
-# README
+## アプリケーション
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+portfolio-site
 
-Things you may want to cover:
+## URL
 
-* Ruby version
+https://rita0702-portfolio.herokuapp.com/
 
-* System dependencies
+## 概要
 
-* Configuration
+ポートフォリオ用まとめサイト
 
-* Database creation
+## 技術一覧
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ruby 2.5.1p57 (2018-03-29 revision 63029)
+- Rails 5.2.3
+- haml/scss/javascript/jquery
+- GitHubs/slack
