@@ -1,1 +1,303 @@
-test
+.header
+  .header-top-text
+    Tatsuya Kawakami's Portfolio
+  .header-sub-text
+    Web Engineer
+.nav
+  %ul.nav-flex
+    %li.nav-list
+      = link_to '#about', class: 'nav-link' do
+        .nav-sub-flex
+          .nav-icon
+            = fa_icon 'user'
+          .nav-text
+            about        
+    %li.nav-list
+      = link_to '#skill', class: 'nav-link' do
+        .nav-sub-flex
+          .nav-icon
+            = fa_icon 'wrench'
+          .nav-text
+            skill
+    %li.nav-list
+      = link_to '#works', class: 'nav-link' do
+        .nav-sub-flex
+          .nav-icon
+            = fa_icon 'tag'
+          .nav-text
+            works
+    %li.nav-list
+      = link_to '#contact', class: 'nav-link' do
+        .nav-sub-flex
+          .nav-icon
+            = fa_icon "handshake"
+          .nav-text
+            contact
+
+.main
+  #about.section
+    .section-inner
+      .section-title
+        = fa_icon 'user'
+        about
+      .section-contents
+        .profile-content
+          .profile-image
+            = image_tag 'chico3.jpg', class: 'profile-icon'
+          .profile-text
+            千葉県在住エンジニア見習い
+            %br
+            法政大学理工学部機械工学専修卒業
+            %br
+            前職では、機械メーカーで営業職と技術職を兼務
+            %br
+            手を動かすのが好きで、再度モノづくりに携わりたい思いで
+            %br
+            畑違いのエンジニア転職に挑戦中!
+            %br
+            TechExpert60期卒業
+
+  #skill.section
+    .section-inner
+      .section-title
+        = fa_icon 'wrench'
+        skill
+      .section-contents
+        .skill-content
+          .skill-one
+            .skill-icon
+              = fa_icon 'desktop'
+            .skill-description
+              .description-title
+                デザインコーディング  
+              .description-skill
+                HTML/CSS
+              .description-point
+                .point.point4
+              .description-text
+                基本的に一通りは自力で書けます
+                %br
+                haml,scssを用いた記法が得意
+          .skill-one
+            .skill-icon
+              = fa_icon 'js-square', class: 'brand-icon'
+            .skill-description
+              .description-title
+                フロンドエンド  
+              .description-skill
+                javascript/jquery
+              .description-point
+                .point.point3
+              .description-text
+                主にjqueryを用いて開発
+                %br
+                簡易的なアニメーション実装
+                %br
+                Ajax実装、自動更新機能の実装
+          .skill-one
+            .skill-icon
+              = fa_icon 'gem', class: 'free-icon'
+              -# = fa_icon 'python', class: 'brand-icon'
+            .skill-description
+              .description-title
+                バックエンド
+              .description-skill
+                Ruby/Rails/python/java
+              .description-point
+                .point.point3
+              .description-text
+                主にRailsを用いて開発
+                %br
+                現在はpythonを少しずつ学習中
+
+          .skill-one
+            .skill-icon
+              = fa_icon 'database'
+            .skill-description
+              .description-title
+                データベース
+              .description-skill
+                MySQL
+              .description-point
+                .point.point3
+              .description-text
+                MySQLをメインで運用
+                
+          .skill-one
+            .skill-icon
+              = fa_icon 'aws', class: 'brand-icon'
+            .skill-description
+              .description-title
+                インフラ、サーバー
+              .description-skill
+                aws/heroku
+              .description-point
+                .point.point4
+              .description-text
+                awsをメインで利用
+                %br
+                チーム開発ではデプロイを担当
+                %br
+                linaxコマンドの基礎は理解済
+          
+          .skill-one
+            .skill-icon
+              = fa_icon 'github'
+            .skill-description
+              .description-title
+                その他開発ツール
+              .description-skill
+                GitHub/slack
+              .description-point
+                .point.point4
+              .description-text
+                Githubの基礎は理解済
+                %br
+                直近はGitDesktopを利用
+
+  #works.section
+    .section-inner
+      .section-title
+        = fa_icon 'tag'
+        works
+      .section-contents
+        .work-contents
+          .work-content
+            .work-image
+              = image_tag 'mercari.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                freemarket_sample_60e
+              .work-info
+                某フリマサイトクローンアプリ
+                %br
+                アジャイル開発にて作成
+                作成期間 4週間
+              .work-url
+                = fa_icon 'globe', class: 'work-url-icon'
+                = link_to 'URL-LINK', 'http://3.114.71.144/', class: 'work-url-link'
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/freemarket_sample_60e', class: 'work-github-link'
+          .work-content
+            .work-image
+              = image_tag 'portfolio.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                portfolio_site
+              .work-info
+                自身のポートフォリオサイト
+              .work-url 
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/portfolio_site', class: 'work-github-link'
+          .work-content
+            .work-image
+              = image_tag 'slackbot.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                python-slackbot
+              .work-info
+                開発言語にpython使用して、slackbotを作成
+              .work-url
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/python-slackbot', class: 'work-github-link'
+          .work-content
+            .work-image
+              = image_tag 'video-app.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                video-app
+              .work-info
+                トップページから好みの動画を選択し、閲覧
+                %br
+                また動画を閲覧中のユーザー同士で会話ができるアプリ
+              .work-url
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/video-app', class: 'work-github-link'
+          .work-content
+            .work-image
+              = image_tag 'chatspace.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                chat-space
+              .work-info
+                tech-expert curriculum
+                %br
+                グループ作成してそのグループ内でチャットができるアプリ
+              .work-url
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/chat-space', class: 'work-github-link'
+          .work-content
+            .work-image
+              = image_tag 'blog.png', class: 'work-preview'
+            .work-caption
+              .work-title
+                blog
+              .work-info
+                初めて作成した個人アプリ
+                %br
+                ユーザー登録と投稿機能のみの簡易ブログアプリ
+              .work-url
+              .work-github
+                = fa_icon 'github', class: 'work-github-icon'
+                = link_to 'GitHub-LINK', 'https://github.com/Rita0702/blog', class: 'work-github-link'
+
+  #contact.section
+    .section-inner
+      .section-title
+        = fa_icon 'handshake-o'
+        contact
+      
+      .section-contents
+        .contact-content
+          %ul.contact-flex
+            %li.contact-list
+              = link_to '#contact', class: 'contact-email-link', data: {turbolinks: false} do
+                = fa_icon 'envelope', class: 'contact-icon'
+                .contact-text
+                  Email
+              #overlay
+                #modalWindow
+                  .modal-message-box
+                    t60.kawakami.tatsuya@gmail.com
+                    %br
+                    何かございましたら、上記のアドレスへご連絡の程よろしくお願い致します！
+                  %button#modal-close-btn 閉じる
+
+            -# %li.contact-list
+            -#   = link_to 'https://twitter.com/Rita0702n', class: 'contact-link' do
+            -#     = fa_icon 'twitter', class: 'contact-icon'
+            -#     .contact-text
+            -#       Twitter
+            
+            %li.contact-list
+              = link_to 'https://github.com/Rita0702', class: 'contact-link' do
+                = fa_icon 'github', class: 'contact-icon'
+                .contact-text
+                  Github
+      
+.footer
+  .footer-top
+    %ul.top-flex
+      %li.top-list
+        = link_to '#about', class: 'top-link' do
+          .top-text
+            about      
+      %li.top-list
+        = link_to '#skill', class: 'top-link' do
+          .top-text
+            skill
+      %li.top-list
+        = link_to '#works', class: 'top-link' do
+          .top-text
+            works
+      %li.top-list
+        = link_to '#contact', class: 'top-link' do
+          .top-text
+            contact
+  .footer-bottom
+    Copyright©Tatsuya kawakami. All Rights Reserved.

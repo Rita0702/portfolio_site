@@ -1,0 +1,306 @@
+.header{
+  width: 100vw;
+  height: 470px;
+  background-image: image-url("pc_background.jpg");
+  background-size: 100vw;
+  .header-top-text{
+    padding-top: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+  }
+  .header-sub-text{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: $white;
+  }
+}
+
+.nav{
+  padding-top: 20px;
+  width: 100vw;
+  height: 50px;
+  .nav-flex{
+    display: flex;
+    justify-content: center;
+    .nav-list{
+      padding: 0 30px;
+      .nav-link{
+        text-decoration: none;
+        .nav-sub-flex{
+          display: flex;
+          color: $black;
+          .nav-icon{
+            font-size: 20px;
+            font-weight: 900;
+          }
+          .nav-text{
+            font-size: 20px;
+            font-weight: 700;
+          }
+          &:hover{
+            color: $light-blue2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main{
+  padding: 30px 0 60px 0;
+  background-color: $cream;
+  .section{
+    padding-top: 20px;
+    .section-inner{
+      padding: 20px 20px;
+      .section-title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+        color: $light-blue2;
+      }
+      .section-contents{
+        padding-top: 20px;
+
+        .profile-content{
+          display: flex;
+          justify-content: center;
+          .profile-image{
+            padding-right: 30px;
+            .profile-icon{
+              height: 200px;
+              width: 200px;
+              border-radius: 50%;
+            }
+          }
+          .profile-text{
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+
+        .skill-content{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .skill-one{
+            width: 350px;
+            background-color: $white;
+            border: 1px solid $white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            display: flex;
+            .skill-icon{
+              font-size: 40px;
+              padding: 10px 20px 10px 10px;
+              .free-icon{
+                font-family: 'Font Awesome 5 Free';
+              }
+              .brand-icon{
+                font-family: 'Font Awesome 5 Brands';
+              }
+            }
+            .skill-description{
+              color: $black;
+              .description-title{
+                padding-top: 5px;
+                font-size: 20px;
+                font-weight: 700;
+              }
+              .description-skill{
+                font-size: 18px;
+                padding-top: 5px;
+              }
+              .description-point{
+                padding-top: 5px;
+                .point {
+                  position: relative;
+                  display: inline-block;
+                  width: 100px;
+                  height: 20px;
+                  font-size: 20px;
+                }
+                .point:before, .point:after {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: '★★★★★';
+                  display: inline-block;
+                  height: 20px;
+                  line-height: 20px;
+                }
+                .point:before {
+                  color: $gray;
+                }
+                .point:after {
+                  color: $pink;
+                  overflow: hidden;
+                }
+                .point1:after {
+                  width: 20px;
+                }
+                .point2:after {
+                  width: 40px;
+                }
+                .point3:after {
+                  width: 60px;
+                }
+                .point35:after {
+                  width: 70px;
+                }
+                .point4:after {
+                  width: 80px;
+                }
+                .point45:after {
+                  width: 90px;
+                }
+                .rate5:after {
+                  width: 100px;
+                }
+              }
+              .description-text{
+                font-size: 18px;
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+
+        .work-contents{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .work-content{
+            background-color: $white;
+            border: 1px solid $white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            .work-image{
+              .work-preview{
+                height: 300px;
+                width: 550px;
+              }
+            }
+            .work-caption{
+              padding: 20px;
+              .work-title{
+                font-size: 22px;
+                font-weight: 700;
+              }
+              .work-info{
+                padding-top: 5px;
+                font-size: 15px;
+              }
+              .work-url{
+                padding-top: 5px;
+                .work-url-icon{
+                  color: $black;
+                }
+                .work-url-link{
+                  text-decoration: none;
+                  color: $navy;
+                  &:hover{
+                    color: $light-blue2;
+                  }
+                }
+              } 
+              .work-github{
+                padding-top: 5px;
+                .work-github-icon{
+                  color: $black;
+                }
+                .work-github-link{
+                  text-decoration: none;
+                  color: $navy;
+                  &:hover{
+                    color: $light-blue2;
+                  }
+                }
+              } 
+            }
+          }
+        }
+
+        .contact-content{
+          display: flex;
+          justify-content: center;
+          .contact-flex{
+            display: flex;
+            justify-content: center;
+            .contact-list{
+              padding: 0 50px;
+              display: flex;
+              .contact-email-link{
+                text-decoration: none;
+                color: $black;
+                .contact-icon{
+                  font-size: 50px;
+                }
+                .contact-text{
+                  font-size: 15px;
+                  font-weight: 700;
+                  text-align: center;
+                  padding-top: 10px;
+                }
+                &:hover{
+                  color: $light-blue2;
+                }
+              }
+              .contact-link{
+                text-decoration: none;
+                color: $black;
+                .contact-icon{
+                  font-size: 50px;
+                }
+                .contact-text{
+                  font-size: 15px;
+                  font-weight: 700;
+                  text-align: center;
+                  padding-top: 10px;
+                }
+                &:hover{
+                  color: $light-blue2;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.footer{
+  height: 100px;
+  background-color: $navy;
+  padding: 40px;
+  .footer-top{
+    .top-flex{
+      display: flex;
+      justify-content: center;
+      .top-list{
+        padding: 0 40px;
+        .top-link{
+          text-decoration: none;
+          .top-text{
+            color: $white;
+            font-size: 22px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom{
+    padding-top: 50px;
+    color: $white;
+    font-size: 15px;
+    text-align: center;
+  }
+}
